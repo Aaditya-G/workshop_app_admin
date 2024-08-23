@@ -15,9 +15,9 @@ async function fetchPendingMessages() {
 
 async function fetchApprovedMessages() {
     try {
-        const response = await fetch('http://127.0.0.1:5000/api/approved-messages');
+        const response = await fetch('http://127.0.0.1:5000/api/messages');
         const data = await response.json();
-        displayMessages(data, 'approved-messages', false);
+        displayMessages(data, 'messages', false);
     } catch (error) {
         console.error('Error fetching approved messages:', error);
     }

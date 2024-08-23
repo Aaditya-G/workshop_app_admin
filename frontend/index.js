@@ -23,7 +23,7 @@ async function postData(username, message) {
       
       const data = await response.json();
       console.log(data);
-      alert('Your message has been submitted for approval!');
+      alert('Your message has been submitted!');
       
       // Clear the form
       document.getElementById('username').value = '';

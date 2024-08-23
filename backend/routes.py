@@ -20,7 +20,7 @@ def configure_routes(app, supabase):
     def reject():
         return reject_message(supabase, request.json['id'])
 
-    @app.route('/api/approved-messages')
+    @app.route('/api/messages')
     def approved_messages():
         return get_approved_messages(supabase)
 

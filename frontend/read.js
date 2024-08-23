@@ -2,7 +2,7 @@ const bigContainer = document.getElementById("big-container");
 
 async function getPosts() {
     try {
-        const response = await fetch("http://127.0.0.1:5000/api/approved-messages");
+        const response = await fetch("http://127.0.0.1:5000/api/messages");
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
